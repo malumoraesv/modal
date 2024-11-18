@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="headerDivs" style="font-size: 1.2em;">
+            <h1 >Atv Storage</h1>
+        </div>
+        <div class="headerDivs">
+
+        </div>
+        <div class="headerDivs">
+            <button onclick="openModal()"><p>Cadastrar</p></button>
+        </div>
+
+    </header>
+
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <h1>Cadastro</h1>
+            <form method="GET" action="javascript: Save_datas();" >
+                <label for="">Nome</label>
+                <input type="text" id="Nome">
+                <label for="">Email</label>
+                <input type="email" id="Email">
+                <label for="">Telefone</label>
+                <input type="tel" required id="telefone" placeholder="(xx) x xxxx-xxxx" oninput="mascara_telefone()" maxlength="16">
+                <label for="">CPF</label>
+                <input required type="text" placeholder="xxx.xxx.xxx-xx" id="CPF" oninput="mascara_CPF()" maxlength="14">
+                <label for="">Senha</label>
+                <input type="password" id="Senha" required>
+                <input type="submit" value="Salvar">
+            </form>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
